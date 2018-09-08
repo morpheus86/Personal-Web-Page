@@ -288,6 +288,19 @@
 
   </div>
 
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: process.env.apiKey,
+      authDomain: "hamadou-tidiane.firebaseapp.com",
+      databaseURL: "https://hamadou-tidiane.firebaseio.com",
+      projectId: "hamadou-tidiane",
+      storageBucket: "hamadou-tidiane.appspot.com",
+      messagingSenderId: process.env.messagingSenderId
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
